@@ -7,3 +7,11 @@
 <h2>Customer</h2>
 
 <h3>@Model.Name</h3>
+
+<ul>
+    <li>Membership Type: @Model.MembershipType.Name</li>
+    @if (Model.Birthdate.HasValue)
+    { 
+        <li>Birthdate: @Model.Birthdate</li>
+    }
+</ul>
